@@ -8,12 +8,19 @@ public class Main {
         int a = 10;
         int s = 0;
 
+        System.out.println();
+        System.out.println("some operation before catching exception");
+        System.out.println("----------------------------");
+        System.out.println();
         try {
             int c = a / s;
             System.out.println(c);
-        } catch (java.lang.ArithmeticException ex){
-            System.out.println("dzielisz przez zero");
+        } catch (ArithmeticException ex){
+            System.out.println("WYJĄTEK " + ex.toString() + " ZOSTAŁ WYKRYTY I OBSŁUŻONY ");
         }
+        System.out.println();
+        System.out.println("----------------------------");
+        System.out.println("some operation after catching exception");
 
     }
 
