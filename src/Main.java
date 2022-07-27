@@ -5,25 +5,18 @@
 public class Main {
     public static void main(String[] args) {
 
-        int a = 10;
-        int s = 0;
-
-        System.out.println();
-        System.out.println("some operation before catching exception");
-        System.out.println("----------------------------");
-        System.out.println();
         try {
-            int c = a / s;
-            System.out.println(c);
-        } catch (ArithmeticException ex){
-            System.out.println("WYJĄTEK " + ex.toString() + " ZOSTAŁ WYKRYTY I OBSŁUŻONY ");
+            ConnectWithPort.letsConnect(-1);
+        } catch (PortNumberException ex) {
+            System.out.println(ex.toString());
         }
-        System.out.println();
-        System.out.println("----------------------------");
-        System.out.println("some operation after catching exception");
+
+        try {
+            ConnectWithPort.letsConnect(99);
+        } catch (PortNumberException ex) {
+            System.out.println(ex.toString());
+        }
+
 
     }
-
-
-
 }
