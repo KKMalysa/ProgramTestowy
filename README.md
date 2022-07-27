@@ -7,4 +7,11 @@ start: obiektowość
 --------------------------------
 zadanie rozgrzewkowe:
 napisz jakikolwiek wyjątek
+
+cel: przypomnienie
+--------------------------------
+zadanie rozgrzewkowe:
+stwórz własny wyjątek oraz przypadek jego użycia
+
+cel: przypomnienie
 --------------------------------
