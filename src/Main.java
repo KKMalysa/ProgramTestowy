@@ -5,20 +5,15 @@
 public class Main {
     public static void main(String[] args) {
 
+        int a = 10;
+        int s = 0;
 
-//        Drewno Drewno1 = new Drewno("dębowe", 1, 2); //tu tworzy się obiekt
-//        Drewno Drewno2 = new Drewno("brzozowe", 3, 5); //tu tworzy się obiekt
-//
-//
-//            System.out.println(Drewno1.nazwaDrewna);
-//            System.out.println("dlugosc: " + Drewno1.dlugosc);
-//            System.out.println("szerokosc " + Drewno1.szerokosc);
-//            System.out.println("=============================================");
-//            System.out.println(Drewno2.nazwaDrewna);
-//            System.out.println("dlugosc: " + Drewno2.dlugosc);
-//            System.out.println("szerokosc " + Drewno2.szerokosc);
-//
-
+        try {
+            int c = a / s;
+            System.out.println(c);
+        } catch (java.lang.ArithmeticException ex){
+            System.out.println("dzielisz przez zero");
+        }
 
     }
 
