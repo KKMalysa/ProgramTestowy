@@ -15,3 +15,4 @@ stwórz własny wyjątek oraz przypadek jego użycia
 
 cel: przypomnienie
 --------------------------------
+
